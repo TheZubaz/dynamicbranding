@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans","PingFang SC","Microsoft YaHei","Helvetica Neue","Hiragino Sans GB","WenQuanYi Micro Hei",Arial,sans-serif;
+  background-image: url("media/fontysbackground.png");
+  transition: 0.5s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  text-align: center;
+  height: 100vh;
+}
+p {
+  color: #522a5c;
+  font-size: 100px;
+}
+
+h1, h2, h3, a {
+  color: #522a5c;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px black;
+}
+
+@-webkit-keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+#bg {
+  background-size: cover;
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  z-index: -1;
+}
+
+h1 {
+      color: white;
+      margin-top: 24px;
+      font-size: 35px;
+      font-weight: 600;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+.slogan {
+  color: white;
+  margin-top: 24px;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: overline;
+}
+
+.mask {
+  width: 320px;
+  height: 50%;
+  -webkit-animation: move 150s infinite;
+          animation: move 150s infinite;
+  background-image: url(https://www.itl.cat/pngfile/big/183-1832136_wallpapers-id-alone-in-a-crowd-art.png);
+  background-size: cover;
+  -webkit-mask: url(media/fontys1.svg);
+          mask: url(media/fontys1.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
